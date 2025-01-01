@@ -5,7 +5,7 @@ import { Users } from "./components/Users";
 function App() {
   return (
     <div className="flex flex-col justify-center items-center h-screen">
-      <Greetings name="Srinu" />
+      <Greetings />
       <Counter/>
       <Users/>
     </div>
