@@ -1,8 +1,14 @@
+import Counter from "./components/Counter";
+import { Greetings } from "./components/Greetings";
+import { Users } from "./components/Users";
+
 function App() {
   return (
-    <>
-      <h1 className="text-red-700 text-5xl">Hello World</h1>
-    </>
+    <div className="flex flex-col justify-center items-center h-screen">
+      <Greetings name="Srinu" />
+      <Counter/>
+      <Users/>
+    </div>
   );
 }
 
