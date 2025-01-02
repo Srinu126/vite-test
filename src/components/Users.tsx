@@ -29,6 +29,7 @@ export const Users = () => {
       <h3 className="text-center font-bold text-3xl m-3">Users</h3>
       <div>
         <p>{user.name}</p>
+        <p>{user.username}</p>
       </div>
     </div>
   );
