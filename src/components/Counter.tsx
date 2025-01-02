@@ -1,12 +1,12 @@
-import { useState } from "react";
+import useCounter from "../hooks/useCounter";
 
 const Counter = () => {
-  const [count, setCount] = useState<number>(0);
+  const {counter, increment} = useCounter(5);
   return (
     <div className="flex flex-col justify-center m-5">
-      <h3 data-testid="counter-value" className="text-center font-bold text-3xl">{count}</h3>
+      <h3 data-testid="counter-value" className="text-center font-bold text-3xl">{counter}</h3>
       <button
-        onClick={() => setCount((prev: number) => prev + 1)}
+        onClick={increment}
         className="text-white mt-3 p-3 bg-slate-600 rounded-lg hover:opacity-90"
       >
         Increment

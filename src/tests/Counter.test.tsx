@@ -12,11 +12,11 @@ describe("Counter", () => {
         render(<Counter/>);
         const button = screen.getByRole("button", {name: /increment/ig});
         const counterValue = screen.getByTestId("counter-value");
-        expect(counterValue.textContent).toEqual("0");
+        expect(counterValue.textContent).toEqual("5");
         await userEvent.click(button);
-        expect(counterValue.textContent).toEqual("1");
+        expect(counterValue.textContent).toEqual("6");
         await userEvent.click(button);
-        expect(counterValue.textContent).toEqual("2");
+        expect(counterValue.textContent).toEqual("7");
         
     })
 });
